@@ -71,9 +71,14 @@ function TimelineCard({
       } mb-12`}
     >
       {/* Konten card */}
+      {/* isLeft=true  → card di sisi KANAN (flex-row-reverse): butuh pl-10 sbg jarak dari ikon tengah */}
+      {/* isLeft=false → card di sisi KIRI  (flex-row)        : butuh pr-10 sbg jarak dari ikon tengah */}
       <div
-        className={`flex-1 ${isLeft ? "md:pr-14 reveal-right" : "md:pl-12 reveal-left"}
-                    pl-14 md:pl-0`}
+        className={`flex-1 ${
+          isLeft
+            ? "md:pl-10 md:pr-2 reveal-right"
+            : "md:pl-2 md:pr-10 reveal-left"
+        } pl-14`}
       >
         <div
           className="glass rounded-2xl p-6

@@ -19,7 +19,13 @@ export const metadata: Metadata = {
   title: "Sugeng — Fullstack Developer",
   description:
     "Portfolio profesional Sugeng, Fullstack Developer. Turning ideas into elegant digital experiences.",
-  keywords: ["Fullstack Developer", "Next.js", "React", "TypeScript", "Portfolio"],
+  keywords: [
+    "Fullstack Developer",
+    "Next.js",
+    "React",
+    "TypeScript",
+    "Portfolio",
+  ],
 };
 
 export default function RootLayout({
@@ -37,7 +43,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{
             __html: `
               try {
-                const theme = localStorage.getItem('theme') || 'dark';
+                const theme = localStorage.getItem('theme') || 'light';
                 if (theme === 'dark') {
                   document.documentElement.classList.add('dark');
                 }
