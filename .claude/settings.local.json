@@ -2,7 +2,15 @@
   "permissions": {
     "allow": [
       "Bash(npm --version)",
-      "Bash(npx create-next-app@latest . --typescript --tailwind --app --no-src-dir --no-eslint --yes)"
+      "Bash(npx create-next-app@latest . --typescript --tailwind --app --no-src-dir --no-eslint --yes)",
+      "Bash(npm install:*)",
+      "Bash(npx tsc:*)",
+      "Bash(node -e \"const l = require\\(''lucide-react''\\); const keys = Object.keys\\(l\\).filter\\(k => /git|link|twitter|instagram|social/i.test\\(k\\)\\); console.log\\(keys.slice\\(0,30\\)\\)\")",
+      "Bash(node -e \"const l = require\\(''lucide-react''\\); const keys = Object.keys\\(l\\).filter\\(k => /^\\(Github|Linkedin|Twitter|Instagram|Globe\\)/i.test\\(k\\)\\); console.log\\(keys\\)\")",
+      "Bash(node -e \"const t = require\\(''''@tsparticles/engine''''\\); console.log\\(''''engine loaded''''\\)\")",
+      "Bash(npm run:*)",
+      "Bash(npx kill-port:*)",
+      "Bash(taskkill /F /IM node.exe)"
     ]
   }
 }
